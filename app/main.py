@@ -12,7 +12,4 @@ def format_single_linter_file(file_path: str, errors: list) -> dict:
 
 
 def format_linter_report(linter_report: dict) -> list:
-    return [format_single_linter_file(list(linter_report.keys())[0],
-            linter_report[list(linter_report.keys())[0]]),
-            format_single_linter_file(list(linter_report.keys())[1],
-            linter_report[list(linter_report.keys())[1]])]
+    return [format_single_linter_file(key, item) for key, item in linter_report.items()]
