@@ -17,4 +17,4 @@ def format_linter_report(linter_report: dict) -> list:
     # write your code here
     return [format_single_linter_file(list(linter_report.keys())[0], []),
             format_single_linter_file(list(linter_report.keys())[1],
-                                      linter_report[list(linter_report.keys())[1]])]
+            linter_report[list(linter_report.keys())[1]])]
